@@ -12,11 +12,6 @@ import java.util.stream.Stream;
 
 public class SolverTest {
 
-	@Test
-	void test() {
-		Assertions.assertThat(true).isTrue();
-	}
-
 	@ParameterizedTest
 	@MethodSource("sudokuProvider")
 	void shouldSolveSudoku(final int[] initial, final int[] solved) {
